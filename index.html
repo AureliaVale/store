@@ -3,323 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aurelia Vale Resources & Digital Store</title>
+    <title>Aurelia Vale Digital Storefront</title>
     <style>
-        :root {
-            --bg-color: #fcfbf9;
-            --card-bg: #ffffff;
-            --text-main: #2b2b2b;
-            --text-muted: #666666;
-            --accent-color: #2e5b44;
-            --accent-hover: #1e3d2d;
-            --border-color: #e5e0d8;
-        }
-
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            margin: 0;
-            padding: 0;
             line-height: 1.6;
-        }
-
-        header {
-            text-align: center;
-            padding: 3.5rem 1rem 2rem 1rem;
+            color: #333;
             max-width: 800px;
             margin: 0 auto;
+            padding: 20px;
         }
-
-        header h1 {
-            font-size: 2.3rem;
-            margin-bottom: 0.5rem;
-            letter-spacing: -0.5px;
+        h1, h2 {
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 8px;
         }
-
-        header p {
-            color: var(--text-muted);
-            font-size: 1.1rem;
+        .product {
+            margin-bottom: 30px;
         }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 1.5rem 4rem 1.5rem;
+        .product img {
+            width: 250px;
+            height: auto;
+            border-radius: 4px;
+            border: 1px solid #ddd;
         }
-
-        .section-title {
-            font-size: 1.4rem;
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 0.5rem;
-            margin-top: 3rem;
-            margin-bottom: 1.5rem;
-            color: var(--accent-color);
+        ul {
+            list-style-type: none;
+            padding-left: 0;
         }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 1.5rem;
+        li {
+            margin-bottom: 15px;
         }
-
-        .card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 1.5rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.05);
-        }
-
-        .card h3 {
-            margin-top: 0;
-            margin-bottom: 0.5rem;
-            font-size: 1.2rem;
-        }
-
-        .price {
-            font-weight: bold;
-            color: var(--accent-color);
-            margin-bottom: 0.75rem;
-        }
-
-        .card p {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-            margin-bottom: 1.5rem;
-            flex-grow: 1;
-        }
-
-        .card-actions {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-        }
-
-        .btn {
-            display: inline-block;
-            text-align: center;
-            background-color: var(--accent-color);
-            color: white;
-            padding: 0.6rem 1rem;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: background-color 0.2s ease;
-        }
-
-        .btn:hover {
-            background-color: var(--accent-hover);
-        }
-
-        footer {
-            margin-top: 4rem;
-            background-color: #ede9e3;
-            padding: 3rem 1rem;
-            text-align: center;
-            border-top: 1px solid var(--border-color);
-        }
-
-        footer h2 {
-            margin-top: 0;
-            font-size: 1.4rem;
-        }
-
-        footer p {
-            max-width: 600px;
-            margin: 0.5rem auto 1.5rem auto;
-            color: var(--text-muted);
+        hr {
+            border: 0;
+            border-top: 1px solid #eaeaea;
+            margin: 30px 0;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Aurelia Vale Resources</h1>
-        <p>Practical AI Prompt Packages, Educational Frameworks, Operational Protocols, and Literary Works by a 30-Year Veteran Educator.</p>
-    </header>
+    <h1>Aurelia Vale Digital Storefront</h1>
+    <p>Welcome to my digital storefront. Browse through our curated collections spanning educational prompt packages, executive protocols, and lifestyle guides.</p>
 
-    <div class="container">
+    <hr>
 
-        <!-- CATEGORY 1: AI PROMPT PACKS & TOOLS -->
-        <h2 class="section-title">AI Prompt Packages & Digital Tools</h2>
-        <div class="grid">
-            
-            <div class="card" style="border: 2px solid var(--accent-color);">
-                <div>
-                    <h3>SEO Keyword & Content Brief Bundle</h3>
-                    <div class="price">€29.99 — Save €4.99</div>
-                    <p>Get Pack 1 (SEO Keyword Finder) and Pack 2 (Content Brief Generator) together in one seamless workflow.</p>
-                </div>
-                <div class="card-actions">
-                    <a href="YOUR_LEMON_SQUEEZY_LINK" class="btn">Get the Bundle</a>
-                </div>
-            </div>
+    <h2>AV Edu Resources</h2>
+    <ul>
+        <li class="product">
+            <strong>SEO Content Workflow Bundle (Pack 1 + Pack 2)</strong><br>
+            <img src="aureliavale-seo-bundle-cover.png.jpg" alt="SEO Content Workflow Bundle"><br>
+            <a href="https://aureliavale.github.io/avedutools/">View Details</a>
+        </li>
+        <li class="product">
+            <strong>AI Content Brief Generator — Long-Tail Keyword Edition (Pack 2)</strong><br>
+            <img src="aureliavale-ai-content-brief-generator-cover.jpg" alt="AI Content Brief Generator"><br>
+            <a href="https://aureliavale.github.io/avedutools/">View Details</a>
+        </li>
+        <li class="product">
+            <strong>15 SEO Keyword Finder AI Prompts — Complete 2026 Pack (Pack 1)</strong><br>
+            <img src="aureliavale-seo-keyword-finder-cover.jpg" alt="15 SEO Keyword Finder AI Prompts"><br>
+            <a href="https://sites.google.com/view/how-to-find-long-tail-keywords/home">View Details</a>
+        </li>
+        <li class="product">
+            <strong>50 AI Prompts for K-12 English Teachers</strong><br>
+            <img src="aureliavale-50-prompts-teachers.cover.jpg" alt="50 AI Prompts for K-12 English Teachers"><br>
+            <a href="https://sites.google.com/view/free-ai-prompts-for-teachers/home">View Details</a>
+        </li>
+        <li class="product">
+            <strong>50 AI Prompts for Homemakers</strong><br>
+            <img src="aureliavale-50-prompts-homemakers.cover.jpg" alt="50 AI Prompts for Homemakers"><br>
+            <a href="https://aureliavale.github.io/avedutools/">View Details</a>
+        </li>
+        <li class="product">
+            <strong>50 AI Prompts for Special Education & Inclusive Teaching</strong><br>
+            <img src="50-ai-prompts-special-education-inclusive-teaching.cover-2.jpg" alt="50 AI Prompts for Special Education & Inclusive Teaching"><br>
+            <a href="https://aureliavale.github.io/avedutools/">View Details</a>
+        </li>
+        <li class="product">
+            <strong>80 AI Prompts for Homeschool Parents</strong><br>
+            <img src="80-prompts-homeschool-parents.cover.jpg" alt="80 AI Prompts for Homeschool Parents"><br>
+            <a href="https://sites.google.com/view/freeaipromptsforhomeschoolpare/home">View Details</a>
+        </li>
+        <li class="product">
+            <strong>80 Copy-Paste ChatGPT Prompts for Roadschool Parents</strong><br>
+            <img src="80-ai-prompts-mobile-learning-rv-homeschooling.jpg" alt="80 Copy-Paste ChatGPT Prompts for Roadschool Parents"><br>
+            <a href="https://sites.google.com/view/free-ai-prompts-for-roadschool/home">View Details</a>
+        </li>
+        <li class="product">
+            <strong>Teen Homework Rescue Kit</strong><br>
+            <img src="homeschool-teen-homework-rescue-kit.jpg.jpg" alt="Teen Homework Rescue Kit"><br>
+            <a href="https://aureliavale.github.io/homework-rescue-kit/">View Details</a>
+        </li>
+        <li class="product">
+            <strong>The C-Suite Inbox Protocol</strong><br>
+            <img src="cover1.jpg" alt="The C-Suite Inbox Protocol"><br>
+            <a href="https://aureliavale.github.io/c-suite-inbox-protocol/">View Details</a>
+        </li>
+    </ul>
 
-            <div class="card">
-                <div>
-                    <h3>SEO Keyword Finder AI Prompts (Pack 1)</h3>
-                    <div class="price">€19.99</div>
-                    <p>15 proven AI prompts to find long-tail keywords, low competition terms & competitor gaps.</p>
-                </div>
-                <div class="card-actions">
-                    <a href="YOUR_LEMON_SQUEEZY_LINK" class="btn">Get Pack 1</a>
-                </div>
-            </div>
+    <hr>
 
-            <div class="card">
-                <div>
-                    <h3>AI Content Brief Generator (Pack 2)</h3>
-                    <div class="price">€14.99</div>
-                    <p>8 prompts to turn keywords into complete content briefs. The natural next step after keyword research.</p>
-                </div>
-                <div class="card-actions">
-                    <a href="YOUR_LEMON_SQUEEZY_LINK" class="btn">Get Pack 2</a>
-                </div>
-            </div>
+    <h2>AV Collections</h2>
+    <ul>
+        <li class="product">
+            <strong>The First 40 Days (The Deeper Story)</strong><br>
+            <img src="aureliavale-40days-cover.jpg" alt="The First 40 Days"><br>
+            <a href="https://aureliavale.github.io/the-deeper-story/">View Details</a>
+        </li>
+        <li class="product">
+            <strong>The Art of the Envelope</strong><br>
+            <img src="the-art-of-the-envelope.jpg" alt="The Art of the Envelope"><br>
+            <a href="https://aureliavale.github.io/the-deeper-story">View Details</a>
+        </li>
+        <li class="product">
+            <strong>Your Husband May Have Left You More Than You Know (Still Thriving, Book 1)</strong><br>
+            <img src="cover-still-thriving.jpg" alt="Your Husband May Have Left You More Than You Know"><br>
+            <a href="https://aureliavale.github.io/your-husband/">View Details</a>
+        </li>
+        <li class="product">
+            <strong>Beneath the Same Sky</strong><br>
+            <img src="beneath-the-same-sky.jpg" alt="Beneath the Same Sky"><br>
+            <a href="https://aureliavale.github.io/beneath-the-same-sky/">View Details</a>
+        </li>
+    </ul>
 
-            <div class="card">
-                <div>
-                    <h3>Executive Email Architecture System</h3>
-                    <div class="price">€39.99</div>
-                    <p>Turn email chaos into an automated decision cockpit with 4-folder structures and delegation matrices.</p>
-                </div>
-                <div class="card-actions">
-                    <a href="YOUR_LEMON_SQUEEZY_LINK" class="btn">Get Instant Access</a>
-                </div>
-            </div>
+    <hr>
 
-        </div>
+    <h2>AV Studio</h2>
+    <ul>
+        <li>
+            <strong>Coming Soon</strong><br>
+            New operational releases and client systems are currently in development.
+        </li>
+    </ul>
 
-        <!-- CATEGORY 2: EDUCATION, HOMESCHOOLING & HOMEMAKING -->
-        <h2 class="section-title">Education, Homeschooling & Homemaking Kits</h2>
-        <div class="grid">
+    <hr>
 
-            <div class="card">
-                <div>
-                    <h3>80 AI Prompts for Homeschool Parents</h3>
-                    <div class="price">€24.99</div>
-                    <p>Curriculum design, progress tracking, lesson plans & portfolio building done in minutes.</p>
-                </div>
-                <div class="card-actions">
-                    <a href="YOUR_LEMON_SQUEEZY_LINK" class="btn">Get It Now</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div>
-                    <h3>50 AI Prompts for K-12 English Teachers</h3>
-                    <div class="price">€12.99</div>
-                    <p>Lesson planning, worksheets, grading & admin done in 60 seconds by a veteran teacher.</p>
-                </div>
-                <div class="card-actions">
-                    <a href="YOUR_LEMON_SQUEEZY_LINK" class="btn">Get It Now</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div>
-                    <h3>80 AI Prompts for Roadschool Parents</h3>
-                    <div class="price">€24.99</div>
-                    <p>Location-based learning on the go, sibling dynamics, plus bonus travel emotional management guide.</p>
-                </div>
-                <div class="card-actions">
-                    <a href="YOUR_LEMON_SQUEEZY_LINK" class="btn">Get It Now</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div>
-                    <h3>50 AI Prompts for Homemakers</h3>
-                    <div class="price">€14.99</div>
-                    <p>51 copy-paste prompts for meal planning, home organization, parenting, budgeting & self-care to save 10+ hours a week.</p>
-                </div>
-                <div class="card-actions">
-                    <a href="YOUR_LEMON_SQUEEZY_LINK" class="btn">Get It Now</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div>
-                    <h3>Teen Homework Rescue Kit</h3>
-                    <div class="price">Pay What You Want (Min. €7.00)</div>
-                    <p>A zero-fluff 10-page printable bundle to stop homework paralysis and build instant focus.</p>
-                </div>
-                <div class="card-actions">
-                    <a href="YOUR_LEMON_SQUEEZY_LINK" class="btn">Get Full Kit</a>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- CATEGORY 3: BOOKS & LITERARY CRAFT -->
-        <h2 class="section-title">Books, Literary Craft & Life Guides</h2>
-        <div class="grid">
-
-            <div class="card">
-                <div>
-                    <h3>The First 40 Days: A New Mom's Companion</h3>
-                    <div class="price">Pay What You Want</div>
-                    <p>A warm, honest, day-by-day companion for new mothers navigating the most tender and overwhelming season of their lives.</p>
-                </div>
-                <div class="card-actions">
-                    <a href="YOUR_LEMON_SQUEEZY_LINK" class="btn">Get The Book</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div>
-                    <h3>The Art of the Envelope</h3>
-                    <div class="price">Pay What You Want</div>
-                    <p>A 25-page digital guide to slow snail mail, wax seals, deep writing prompts & stationery templates.</p>
-                </div>
-                <div class="card-actions">
-                    <a href="YOUR_LEMON_SQUEEZY_LINK" class="btn">Get The Guide</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div>
-                    <h3>Your Husband May Have Left You More Than You Know</h3>
-                    <div class="price">€5.99</div>
-                    <p>A practical, zero-legalese guide and printable checklist for recently widowed women to uncover assets.</p>
-                </div>
-                <div class="card-actions">
-                    <a href="YOUR_LEMON_SQUEEZY_LINK" class="btn">Download Guide</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div>
-                    <h3>The Deeper Story: 50 Literary Writing Prompts</h3>
-                    <div class="price">Pay What You Want</div>
-                    <p>Carefully crafted prompts for serious writers exploring character voice, memory, and moral complexity.</p>
-                </div>
-                <div class="card-actions">
-                    <a href="YOUR_LEMON_SQUEEZY_LINK" class="btn">Get The Book</a>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- FOOTER: AFFILIATE INVITATION -->
-    <footer>
-        <h2>Join the AV Edu Partner Program</h2>
-        <p>Love these resources? Earn <strong>40% commission</strong> by sharing these prompt packs, educational toolkits, and guides with your audience.</p>
-        <a href="YOUR_LEMON_SQUEEZY_AFFILIATE_LINK" class="btn">Become an Affiliate Partner</a>
-    </footer>
+    <h2>Join Our Affiliate Program</h2>
+    <ul>
+        <li>
+            <strong>Earn by Sharing</strong><br>
+            Love these resources? Join our affiliate program to promote our digital toolkits and earn commissions on every referral.<br>
+            <a href="https://av-edu-lab.lemonsqueezy.com/affiliates">Join the Affiliate Program</a>
+        </li>
+    </ul>
 
 </body>
 </html>
