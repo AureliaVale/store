@@ -11,6 +11,7 @@ except Exception as e:
 
 store_base_url = "https://aureliavale.github.io/store/"
 today_date = datetime.now().strftime("%B %d, %Y")
+file_date_str = datetime.now().strftime('%Y-%m-%d')
 
 # Build a clean markdown newsletter template
 newsletter_content = f"""# Quiet Store Weekly Dispatch
@@ -42,9 +43,12 @@ newsletter_content += f"""
 # Ensure a newsletters directory exists
 os.makedirs('newsletters', exist_ok=True)
 
-# Save the newsletter with a date stamp
-filename = f"newsletters/newsletter-{datetime.now().strftime('%Y-%m-%d')}.md"
+# Save the newsletter file
+filename = f"newsletters/newsletter-{file_date_str}.md"
 with open(filename, 'w', encoding='utf-8') as f:
     f.write(newsletter_content)
 
 print(f"Successfully generated newsletter: {filename}")
+
+# Optional: Automatically update index.html if you have a specific placeholder or section for it
+# For now, we ensure the build script commits any new dispatches so your static site generator or index can read them.
