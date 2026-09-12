@@ -33,10 +33,15 @@ jobs:
           mkdir -p promos
           python .github/scripts/generate_promo.py || echo "Promo script skipped"
 
-      - name: Commit and push generated feed and promos
+      - name: Generate Weekly Newsletter
+        run: |
+          mkdir -p newsletters
+          python .github/scripts/generate_newsletter.py || echo "Newsletter script skipped"
+
+      - name: Commit and push generated feed, promos, and newsletter
         run: |
           git config --global user.name "Quiet Store Bot"
           git config --global user.email "bot@users.noreply.github.com"
-          git add catalog.xml promos/
-          git commit -m "Auto-update Pinterest catalog and weekly promo [skip ci]" || echo "No changes to commit"
+          git add catalog.xml promos/ newsletters/
+          git commit -m "Auto-update catalog, promos, and weekly newsletter [skip ci]" || echo "No changes to commit"
           git push
