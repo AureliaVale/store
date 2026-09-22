@@ -133,40 +133,8 @@
         // Initialize store load
         loadStore();
     </script>
-<!-- Buy Nudge Widget -->
-<div id="buy-nudge" style="
-  position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
-  background:#1a1a1a; color:#fff; padding:12px 20px; border-radius:30px;
-  font-family:sans-serif; font-size:14px; display:flex; align-items:center;
-  gap:12px; box-shadow:0 4px 12px rgba(0,0,0,0.3); z-index:9999; max-width:90vw;">
-  <span id="bn-message"></span>
-  <a id="bn-link" href="#" target="_blank" style="
-    background:#e63946; color:#fff; padding:6px 14px; border-radius:20px;
-    text-decoration:none; font-weight:bold; white-space:nowrap;">Shop Now</a>
-  <span onclick="document.getElementById('buy-nudge').style.display='none'"
-    style="cursor:pointer; opacity:0.6; margin-left:4px;">✕</span>
-</div>
 
-<script>
-  const BN_DEADLINE = "2026-09-30T23:59:59";
-  const BN_STORE_LINK = "https://aureliavale.github.io/store/";
-  const BN_LABEL = "Weekend offer ends in";
-
-  function bnUpdate() {
-    const now = new Date();
-    const end = new Date(BN_DEADLINE);
-    const diff = end - now;
-    if (diff <= 0) {
-      document.getElementById('buy-nudge').style.display = 'none';
-      return;
-    }
-    const h = Math.floor(diff / 3600000);
-    const m = Math.floor((diff % 3600000) / 60000);
-    document.getElementById('bn-message').textContent = `${BN_LABEL} ${h}h ${m}m`;
-    document.getElementById('bn-link').href = BN_STORE_LINK;
-  }
-  bnUpdate();
-  setInterval(bnUpdate, 60000);
+    
 </script>
 </body>
 </html>
