@@ -30,6 +30,16 @@
     "badge": "Best Value"
   },
   {
+    "id": "ai-prompt-engineer-full-stack-kit",
+    "title": "The AI Prompt Engineer's Full-Stack Kit: 10 Production-Ready Prompts for Architecture, Testing & DevOps",
+    "category": "Developer Toolkits",
+    "price": "€27.00",
+    "description": "Ten production-ready system prompts for senior developers, technical founders, and systems architects. They cover architecture and database design, testing and security audits, Docker and CI/CD, caching and API documentation, and observability. Every prompt ends with a self-audit checklist.",
+    "checkout_url": "https://av-edu-lab.lemonsqueezy.com/checkout/buy/b7307c50-7f25-48c4-9add-cf1f7a064c7e",
+    "sample_url": "",
+    "badge": ""
+  },
+  {
     "id": "homemakers-ai-prompts",
     "title": "50 AI Prompts for Homemakers",
     "category": "AI Guides & Home",
@@ -100,11 +110,21 @@
     "badge": ""
   },
   {
+    "id": "the-art-of-the-envelope",
+    "title": "The Art of the Envelope: A Creative Guide to Snail Mail, Wax Seals, and Slow Connection",
+    "category": "Creative Guides",
+    "price": "€9.00",
+    "description": "A mindful 25-page digital toolkit for the modern pen pal: 10 deep writing prompts, wax seal and envelope-decoration tips, printable stationery, and a correspondence log. An invitation to step away from instant notifications and reclaim the quiet rhythm of handwritten connection.",
+    "checkout_url": "https://av-edu-lab.lemonsqueezy.com/checkout/buy/1f4d072a-fc84-4341-913a-a33776205872",
+    "sample_url": "",
+    "badge": ""
+  },
+  {
     "id": "the-first-40-days",
     "title": "The First 40 Days — A New Mom's Guided Companion",
     "category": "Books & Guides",
     "price": "Pay what you want",
-    "description": "A guided companion for new mothers through the first 40 days.",
+    "description": "A warm, day-by-day companion for new mothers through the postpartum period, written by a retired teacher and grandmother. Not a medical manual: honest, practical support for physical and emotional recovery, rest, and nourishment.",
     "checkout_url": "https://av-edu-lab.lemonsqueezy.com/checkout/buy/82ec190f-9e20-475f-958e-6f9535565a15",
     "sample_url": "https://aureliavale.github.io/the-first-40-days/",
     "badge": ""
