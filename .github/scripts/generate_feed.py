@@ -38,8 +38,14 @@ for product in products:
     
     # Availability & Price (Treating digital items as in stock, standard price or free)
     ET.SubElement(item, 'g:availability').text = 'in stock'
-    ET.SubElement(item, 'g:price').text = '0.00 USD' if product.get('price') == 'Free' else '9.00 USD' # Fallback digital pricing structure if needed
-    
+    ET.Sub    raw_price = str(product.get('price', '')).strip()
+    if raw_price.lower() in ('free', '0', '0.00', '€0.00', '$0.00'):
+        price_value = '0.00'
+    else:
+        digits = ''.join(c for c in raw_price if c.isdigit() or c == '.')
+        price_value = digits if digits else '0.00'
+    currency = 'USD' if raw_price.strip().startswith('$') else 'EUR'
+    ET.SubElement(item, 'g:price').text = f'{price_value} {currency}'
     # Fallback image (Pinterest requires an image link)
     ET.SubElement(item, 'g:image_link').text = "https://aureliavale.github.io/store/assets/preview.png"
 
